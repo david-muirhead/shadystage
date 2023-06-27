@@ -1,0 +1,18 @@
+# Created by trellis-cli v1.11.0
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  shadynasty.online:
+    site_hosts:
+    - canonical: shadynasty.test
+      redirects:
+      - www.shadynasty.test
+    local_path: ../site
+    admin_email: admin@shadynasty.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false

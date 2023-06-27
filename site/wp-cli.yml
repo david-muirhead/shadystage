@@ -1,0 +1,10 @@
+path: web/wp
+server:
+  docroot: web
+
+@development:
+  ssh: vagrant@shadynasty.test/srv/www/shadynasty.online/current
+@staging:
+  ssh: web@stage.shadynasty.online/srv/www/shadynasty.online/current
+@production:
+  ssh: web@sidepiece.com.au/srv/www/sidepiece.com.au/current

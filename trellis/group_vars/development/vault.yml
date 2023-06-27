@@ -1,0 +1,17 @@
+# Created by trellis-cli v1.11.0
+# Documentation: https://roots.io/trellis/docs/vault/
+
+vault_mysql_root_password: 2x7DrkKQ0ZYyizJjlpDjmYIg1Dt5M7NJYfEC2eedyagaPaKbFIUxlfvMu63kBZ8D
+vault_wordpress_sites:
+  shadynasty.online:
+    admin_password: UXrxDQA7FfKHP5lEMvaaA5YzILaTnatdCdXeflVSc19JMNiw2xrXHUOOwcBzg04K
+    env:
+      db_password: zr9R4DlEashQtCHSI5rz7mYiLGsgTgbwzKkEqednHvckivh32N4hgRuyFTAtYZU7
+      auth_key: Cd8zIGEyyVKqj6vbXC28OKuHa9ze3pitugdXb7Mbk3frV58yJRfQ26tsZIfudw9z
+      secure_auth_key: Nwto6l4moyNc2Nh4BPVGmalqMJzYeh5gELybEm98aKEZ7GsveLxId83SY7SHwdaT
+      logged_in_key: M2aECRRLnkBbOwcrtkb1W4lylv1cr2woRpSvmKNfuG7pfk0vAhVrWvnwUhfUo0Yu
+      nonce_key: PNudrorPkWaWY1ZnAyodJDteB1gr3iHHxJWoiN3BjfBe1nxxsTMaFWc9chRdgcYz
+      auth_salt: hoPYlK9LwRoNeXPwhFUvmhrO0bl50uH9Wr0czKEAy4NvaRi7t7gaXz0lPDI2HDhj
+      secure_auth_salt: iLXtjYdMT997Od0i7sItefWPfyCX5ogRJxH0bywrCJ075w2Cfxogm0Jwfe9kw8MT
+      logged_in_salt: zvwd1eMrf2RAduZL5dvwXGw2E0uEgUcLggkxbaeKm4vOMVDuCEhLxjsi7o6bbLVR
+      nonce_salt: BH0NPmtvLMwQTH3SCPqbAdRdtSKkMXHBTBGgqOx70kS71fxFJ6kEw1dPUshHNFXr
