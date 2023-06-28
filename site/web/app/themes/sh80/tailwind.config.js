@@ -15,8 +15,8 @@ const config = {
         sh80: {
           green: '#a2eb00',
           orange: '#f27e25',
-          purple: '#544787',
-          teal: '#458da6',
+          purple: '#4000a9',
+          blue: '#022181',
           offwhite: '#f7ebd5',
         },
       }, // Extend Tailwind's default colors

@@ -4,12 +4,10 @@
 wordpress_sites:
   shadynasty.online:
     site_hosts:
-    - canonical: shadynasty.online
-      redirects:
-      - www.shadynasty.online
+    - canonical: stage.shadynasty.online
     local_path: ../site
     branch: master
-    repo: git@github.com:example/example.com.git
+    repo: git@github.com:david-muirhead/shadystage.git
     repo_subtree_path: site
     multisite:
       enabled: false

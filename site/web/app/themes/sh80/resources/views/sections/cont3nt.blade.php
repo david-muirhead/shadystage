@@ -1,4 +1,6 @@
-<?php
+@extends('layouts.app')
+<section id="c0nt3nt" class="grid grid-cols-3 gap-2">
+  <?php
     $loop = new WP_Query( array( 'post_type' => 'releases','meta_query' => array(
   array(
     'key' => 'feature',
@@ -8,12 +10,18 @@
 ) ) );
     if ( $loop->have_posts() ) :
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <div class="release">
-            <div class="info"> 
-              <span class="text-h2"><?php the_field('title'); ?></span>
-              <span class="text-h3"><?php the_field('format'); ?></span>
-              <span class="text-h2 right"><?php the_field('year'); ?></span>
-              <?php if( have_rows('links') ): ?>
+          <div class="release relative">
+            <div class="info font-mono text-sm text-sh80-black absolute top-0 z-10 text-h2"> 
+            @hasfield('title')
+            <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite">@field('title')</span>
+            @endfield
+            @hasfield('format')
+              <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite">@field('format')</span>
+            @endfield
+            @hasfield('year')
+            <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite">@field('year')</span>
+            @endfield
+             <?php if( have_rows('links') ): ?>
                 <div class="linx">
                   <?php while( have_rows('links') ): the_row();
                     // vars
@@ -81,8 +89,8 @@
             <?php
             $image = get_field('visual');
             if( !empty( $image ) ): ?>
-            <div class="video-container aspect-video ">
-              <img class="video-thumbnail object-cover w-full" src="<?php the_field('artwork_back');?>" alt="Video Thumbnail" data-video-url="<?php the_field('visual');?>">
+            <div class="video-container aspect-video z-0">
+              <img class="video-thumbnail object-cover w-full h-full" src="<?php the_field('artwork_back');?>" alt="Video Thumbnail" data-video-url="<?php the_field('visual');?>">
             </div>
             <?php endif; ?>
           </div>
@@ -98,3 +106,4 @@
   </div>
   <div class="lightbox-overlay z-10"></div>
 </div>
+  </section>

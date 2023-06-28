@@ -1,4 +1,4 @@
-<div class="mt-36 rap w-full p-8 text-sh80-green z-10">
+<section id="d8s" class="mt-36 rap w-full p-8 text-sh80-green z-10 min-h-screen mix-blend-difference">
 <?php
 $member_group_terms = get_terms( 'tour' );
 ?>
@@ -35,9 +35,9 @@ foreach ( $member_group_terms as $member_group_term ) {
 
       <?php
       if( get_field('tour_poster', 'category_'. $member_group_term->term_id .'')) {
-        echo '<img src="';
+        echo '<span class="relative flex items-center justify-center -z-10"><img class="w-1/2 absolute"src="';
         echo get_field('tour_poster', 'category_'. $member_group_term->term_id .'');
-        echo '">';
+        echo '"></span>';
       } else {
       }
       ?>
@@ -57,4 +57,4 @@ foreach ( $member_group_terms as $member_group_term ) {
     wp_reset_postdata();
 }
 ?>
-</div>
+</section>

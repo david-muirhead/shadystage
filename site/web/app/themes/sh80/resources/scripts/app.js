@@ -182,6 +182,41 @@ controls.enablePan = false;
 
 render(); 
 
+
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+
+var vert = document.querySelector(".vert");
+
+var scrollTop = window.pageYOffset;
+document.querySelectorAll('#bigRed').forEach(function(element) {
+  var topDistance = element.offsetTop;
+  if ((topDistance + 600) < scrollTop) {
+    vert.style.opacity = 1;
+  } else {
+    vert.style.opacity = 0;
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset;
+  document.querySelectorAll('#bigRed').forEach(function(element) {
+      var topDistance = element.offsetTop;
+      if ((topDistance + 600) < scrollTop) {
+        vert.style.opacity = 1;
+      } else {
+        vert.style.opacity = 0;
+      }
+  });
+});
   // this is the end
 
 });

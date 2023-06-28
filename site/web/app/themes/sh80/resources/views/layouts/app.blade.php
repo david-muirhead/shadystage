@@ -1,4 +1,4 @@
-@include('sections.header')
+
   <main id="main" class="main pt-hero">
     <div class="w-1/2">  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
     <filter id="thermal-vision" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
