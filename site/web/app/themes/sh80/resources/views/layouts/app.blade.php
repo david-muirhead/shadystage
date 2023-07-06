@@ -26,5 +26,3 @@
   </main>
 
 </div>
-
-@include('sections.footer')

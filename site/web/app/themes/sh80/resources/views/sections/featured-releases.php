@@ -1,5 +1,6 @@
-<div class="mt-36 rap w-full p-8 text-sh80-offwhite z-10 h-screen">
-<span class="text-h1-m text-center">RELEASES</span>
+<section id="bigRed" class="feature release text-sh80-green">
+  <div class="mt-36 rap w-full p-8 text-sh80-offwhite z-10 h-screen">
+<span class="text-h1-m mb-8">RELEASES</span>
   <?php
     $loop = new WP_Query( array( 'post_type' => 'releases','meta_query' => array(
   array(
@@ -117,3 +118,4 @@
     wp_reset_postdata();
 ?>
 </div>
+</section>

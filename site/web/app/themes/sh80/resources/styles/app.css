@@ -52,10 +52,11 @@ html {
 }
 
 .vert {
+    @apply text-sh80-green;
     opacity: 0;
     position: fixed;
-    bottom: 25px;
-    left: 0;
+    bottom: 30px;
+    right: 0;
     font-weight: 700;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;

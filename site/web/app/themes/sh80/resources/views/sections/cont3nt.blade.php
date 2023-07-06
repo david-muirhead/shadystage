@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<section id="c0nt3nt" class="grid grid-cols-3 gap-2">
+<section id="c0nt3nt" class="md:grid md:grid-cols-3 md:gap-3 p-2">
   <?php
     $loop = new WP_Query( array( 'post_type' => 'releases','meta_query' => array(
   array(
@@ -13,13 +13,13 @@
           <div class="release relative">
             <div class="info font-mono text-sm text-sh80-black absolute top-0 z-10 text-h2"> 
             @hasfield('title')
-            <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite">@field('title')</span>
+            <span class="inline-block rounded-lg px-2 ml-2 bg-sh80-offwhite mt-2">@field('title')</span>
             @endfield
             @hasfield('format')
-              <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite">@field('format')</span>
+              <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite mt-2">@field('format')</span>
             @endfield
             @hasfield('year')
-            <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite">@field('year')</span>
+            <span class="rounded-lg px-2 ml-2 bg-sh80-offwhite mt-2">@field('year')</span>
             @endfield
              <?php if( have_rows('links') ): ?>
                 <div class="linx">
@@ -106,4 +106,4 @@
   </div>
   <div class="lightbox-overlay z-10"></div>
 </div>
-  </section>
+</section>

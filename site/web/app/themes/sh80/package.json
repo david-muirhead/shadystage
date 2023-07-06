@@ -24,10 +24,7 @@
     "@roots/sage": "6.12.2"
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001508",
-    "curtainsjs": "^8.1.4",
     "gsap": "^3.12.1",
-    "locomotive-scroll": "^4.1.4",
     "p5": "^1.6.0",
     "shader-park-core": "^0.1.38",
     "three": "^0.153.0"
