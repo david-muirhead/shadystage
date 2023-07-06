@@ -10,7 +10,7 @@ DEVSITE="http://shadynasty.test"
 PRODDIR="web@hi-ground.org:/srv/www/example/shared/uploads/"
 PRODSITE="https://hi-ground.org"
 
-STAGDIR="web@stage.shadynasty.online:/srv/www/example/shared/uploads/"
+STAGDIR="web@stage.shadynasty.online:/srv/www/shadynasty.online/current/web/app/uploads"
 STAGSITE="http://stage.shadynasty.online"
 
 FROM=$1
