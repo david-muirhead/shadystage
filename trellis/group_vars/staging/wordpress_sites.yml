@@ -6,7 +6,7 @@ wordpress_sites:
     site_hosts:
     - canonical: stage.shadynasty.online
     local_path: ../site
-    branch: master
+    branch: main
     repo: git@github.com:david-muirhead/shadystage.git
     repo_subtree_path: site
     multisite:

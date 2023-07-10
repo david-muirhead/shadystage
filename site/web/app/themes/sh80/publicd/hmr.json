@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "protocol": "http:",
+    "hostname": "localhost",
+    "hash": "",
+    "search": "",
+    "pathname": "/",
+    "path": "/",
+    "href": "http://localhost:3000/",
+    "port": 3000
+  },
+  "proxy": {
+    "protocol": "http:",
+    "hostname": "shadynasty.test",
+    "hash": "",
+    "search": "",
+    "pathname": "/",
+    "path": "/",
+    "href": "http://shadynasty.test/"
+  },
+  "publicPath": "/app/themes/sh80/public/"
+}

@@ -11,14 +11,14 @@ export function spCode() {
   return `
 
   let audio = input();
-  let pointerDown = input(0, 0, 0); 
+  let pointerDown = input(0, 0, 0);
   setGeometryQuality(10);
   
   setMaxIterations(20);
   let s = getSpace();
   let r = getRayDirection();
   
-  let n1 = noise(r * 20 + vec3(0, audio, vec3(0, audio, audio))*8 ); 
+  let n1 = noise(r * 20 + vec3(0, audio, vec3(0, audio, audio))*8 );
   let n = noise(s + vec3(1, 20, audio*4));
   
   metal(n*.1 );
@@ -63,9 +63,13 @@ lightbox.addEventListener('click', function() {
   lightbox.style.display = 'none';
   lightboxOverlay.style.opacity = '0';
 });
+// User agent detection
+var userAgent = navigator.userAgent.toLowerCase();
 
-if (!/Mobi|Android/i.test(navigator.userAgent)) {
+// Check if the user is using a mobile device
+var isMobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
 
+if (!isMobile) {
   let scene = new Scene();
 
   let camera = new PerspectiveCamera( 400, window.innerWidth/window.innerHeight, 0.01, 2000 );
@@ -91,7 +95,7 @@ if (!/Mobi|Android/i.test(navigator.userAgent)) {
   
   // load a sound and set it as the Audio object's buffer
   const audioLoader = new AudioLoader();
-  audioLoader.load( 'http://shadynasty.test/app/uploads/2023/06/Shady-Nasty-R0LL1N-H1LLZ.mp3', function( buffer ) {
+  audioLoader.load( 'http://stage.shadynasty.online/app/uploads/2023/06/Shady-Nasty-R0LL1N-H1LLZ.mp3', function( buffer ) {
     sound.setBuffer( buffer );
     sound.setLoop(true);
     sound.setVolume(0.5);
@@ -124,6 +128,11 @@ if (!/Mobi|Android/i.test(navigator.userAgent)) {
     state.currMouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
   }, false );
   
+  document.querySelector('.l1nk').addEventListener( 'mouseover', (event) => state.currPointerDown = 1.0, false );
+  document.querySelector('.l1nk').addEventListener( 'mouseleave', (event) => state.currPointerDown = 0.0, false );
+  window.addEventListener( 'pointerdown', (event) => state.currPointerDown = 1.0, false );
+  window.addEventListener( 'pointerup', (event) => state.currPointerDown = 0.0, false );
+  
   let geometry  = new SphereGeometry( 15, 32, 16 ); 
   
   // // // Create Shader Park Sculpture
@@ -136,6 +145,15 @@ if (!/Mobi|Android/i.test(navigator.userAgent)) {
   } ));
   
   scene.add(mesh);
+  
+  
+  // Add Controlls
+  let controls = new OrbitControls( camera, renderer.domElement, {
+    enableDamping : true,
+    dampingFactor : 0.25,
+    zoomSpeed : 0.5,
+    rotateSpeed : 0.5
+  } );
   
   let onWindowResize = () => {
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -169,8 +187,11 @@ if (!/Mobi|Android/i.test(navigator.userAgent)) {
   controls.enablePan = false;
   
   render(); 
-  
 }
+
+
+
+
 
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   anchor.addEventListener('click', function (e) {

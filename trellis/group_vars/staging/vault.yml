@@ -19,3 +19,5 @@ vault_wordpress_sites:
       secure_auth_salt: oqHEkt1KQd5AvYkACH5638W79Kdho1LUzvE8sl2xwqSDbt0AqXTJqAaMPBD9JkqR
       logged_in_salt: 8c0UaMYwmZKt4kofNjwgIHkUNHWrRoYqKpbEgnwpqohmTMgREQxCdvL3Cp41Evmz
       nonce_salt: OzlY5xUQOBPBG55ICIh0W732TAmaq3SGuB1YvzVchw3Q5ijc5dcpQyyc6dkbHcZ3
+    composer_authentications:
+      - { hostname: connect.advancedcustomfields.com, username: b3JkZXJfaWQ9MTU2NjMyfHR5cGU9ZGV2ZWxvcGVyfGRhdGU9MjAxOS0wMy0yOCAxMzoyNzoxOA==, password: http://www.stage.shadynasty.online}
