@@ -1,7 +1,7 @@
-<div id="tophead" class="fixed grid grid-cols-4 gap-4 w-full text-sm text-sh80-offwhite font-mono z-50">
-  <a href="#contact"s>releases</a>
-  <a href="#dates">dates</a>
-  <a href="#content">vision</a>
+<div id="top" class="fixed grid grid-cols-4 gap-4 w-full text-sm text-sh80-offwhite font-mono z-50">
+  <a href="#bigRed">releases</a>
+  <a href="#d8s">dates</a>
+  <a href="#c0nt3nt">vision</a>
   <a class="margin border-b-sh80-green" href="#shop">shop</a>
 </div>
 <div class="container z-100 fixed bottom-0 text-red-500">
