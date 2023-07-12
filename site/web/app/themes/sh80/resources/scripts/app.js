@@ -20,7 +20,7 @@ export function spCode() {
   
   let n1 = noise(r * 20 + vec3(0, audio, vec3(0, audio, audio))*8 );
   let n = noise(s + vec3(1, 20, audio*4));
- 
+  noLighting();
   color(0.9,6,0);
   displace(mouse.x * 2, mouse.y * 2, 0);
   boxFrame(vec3(2), abs(n) * .1 / 100 );
