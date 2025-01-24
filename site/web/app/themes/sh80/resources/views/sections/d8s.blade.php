@@ -1,4 +1,4 @@
-<section id="d8s" class="mt-36 rap w-full p-8 text-sh80-green z-10 min-h-screen mix-blend-difference">
+  <div>
 <?php
 $member_group_terms = get_terms( 'tour' );
 ?>
@@ -57,4 +57,4 @@ foreach ( $member_group_terms as $member_group_term ) {
     wp_reset_postdata();
 }
 ?>
-</section>
+</div>

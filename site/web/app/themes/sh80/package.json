@@ -21,12 +21,10 @@
   "devDependencies": {
     "@roots/bud": "6.12.2",
     "@roots/bud-tailwindcss": "6.12.2",
-    "@roots/sage": "6.12.2"
+    "@roots/sage": "6.12.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2"
   },
   "dependencies": {
-    "gsap": "^3.12.1",
-    "p5": "^1.6.0",
-    "shader-park-core": "^0.1.38",
-    "three": "^0.153.0"
+    "@uehreka/seriously": "^1.0.1"
   }
 }

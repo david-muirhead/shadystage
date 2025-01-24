@@ -1,6 +1,4 @@
-<section id="bigRed" class="feature release text-sh80-green">
-  <div class="mt-36 rap w-full p-8 text-sh80-offwhite z-10 h-screen">
-<span class="text-h1-m mb-8">RELEASES</span>
+<div class="mt-36 rap w-full p-8 text-sh80-offwhite z-10 flex">
   <?php
     $loop = new WP_Query( array( 'post_type' => 'releases','meta_query' => array(
   array(
@@ -11,9 +9,9 @@
 ) ) );
     if ( $loop->have_posts() ) :
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <div class="feature release group pb-5 md:pb-10 block cursor-pointer">
+          <div class="feature release group pb-5 md:pb-10 block">
             
-              <div class="covers group w-1/2  right-0 hidden group-hover:block  fixed top-0 right-0 h-screen flex justify-center items-center">
+              <div >
               <?php
               $image = get_field('artwork_front');
               if( !empty( $image ) ): ?>
@@ -118,4 +116,3 @@
     wp_reset_postdata();
 ?>
 </div>
-</section>

@@ -4,7 +4,7 @@ const config = {
   theme: {
     extend: {
       spacing: {
-        'hero': '20rem',
+        'hero': '40rem',
         'heroMax': '65rem',
       },
       height: {
@@ -13,10 +13,10 @@ const config = {
       colors: {
         primary: "#1475be",
         sh80: {
-          green: '#a2eb00',
-          orange: '#f27e25',
+          green: '#00D2FF',
+          orange: '#FF4200',
           purple: '#4000a9',
-          blue: '#022181',
+          blue: '#00D2FF',
           offwhite: '#f7ebd5',
         },
       }, // Extend Tailwind's default colors
@@ -28,7 +28,7 @@ const config = {
           lineHeight: '30px',
         }],
         'h3': ['20px', {
-          lineHeight: '26px',
+          lineHeight: '22px',
         }],
         'h4': ['18px', {
           lineHeight: '22px',
@@ -48,7 +48,8 @@ const config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 };
 
 export default config;

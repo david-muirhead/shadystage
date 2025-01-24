@@ -1255,12 +1255,12 @@
         {
           "name": "Sh80 Green",
           "slug": "sh80-green",
-          "color": "#a2eb00"
+          "color": "#00d2ff"
         },
         {
           "name": "Sh80 Orange",
           "slug": "sh80-orange",
-          "color": "#f27e25"
+          "color": "#ff4200"
         },
         {
           "name": "Sh80 Purple",
@@ -1270,7 +1270,7 @@
         {
           "name": "Sh80 Blue",
           "slug": "sh80-blue",
-          "color": "#022181"
+          "color": "#00d2ff"
         },
         {
           "name": "Sh80 Offwhite",

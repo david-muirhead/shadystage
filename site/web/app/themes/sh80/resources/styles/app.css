@@ -2,35 +2,48 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'olde';
+  src: url('../fonts/OsgardStencil.woff2') format('woff2'),
+       url('../fonts/OsgardStencil.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
 	font-size: 14px;
 	--color-text: #000;
 	--color-bg: #f2f1eb;
 	--color-link: #000;
 	--color-link-hover: #000;
-	--page-padding: 1rem;
 	--columns: 50;
 	--cursor-blend-mode: difference;
 	--cursor-radius: 0;
 }
 
 html {
-  @apply py-2 px-4  bg-stone-900 tracking-wide scroll-smooth;
+  @apply bg-stone-900 tracking-wide scroll-smooth;
   font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 600;
   text-transform: uppercase;
   --color-text: #234acd;
 	--color-bg: #000;
-	--color-link: #a2eb00;
+	--color-link: #ff4700;
 	--color-link-hover: #fff;
-	--cursor-bg: #a2eb00;
+	--cursor-bg: #ff4700;
 	--cursor-blend-mode: overlay;
+  scroll-snap-type: y mandatory;
+}
+
+section{
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 
 
-.thermal:hover {
-    filter: invert(1) url(#thermal-vision);
-    transition: all 0.5s ease;
+.thermal {
+    filter: url(#thermal-vision);
 }
 
 *,
@@ -56,7 +69,7 @@ html {
     opacity: 0;
     position: fixed;
     bottom: 30px;
-    right: 0;
+    right: 100px;
     font-weight: 700;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
@@ -80,9 +93,6 @@ canvas {
 .video-container {
   display: inline-block;
   cursor: pointer;
-}
-
-.video-thumbnail {
 
 }
 
@@ -126,4 +136,38 @@ canvas {
   top: 0;
   left: 0;
   pointer-events: none;
+}
+
+#icon {
+filter:  blur(10px) saturate(25%);
+}
+#icon2 {
+  filter: contrast(150%) grayscale(100%) brightness(50000%) blur(10px) saturate(600%);
+  filter: contrast(200%) grayscale(0%) brightness(50000%) blur(2px) saturate(200%);
+}
+
+.stretch {
+  font-family: 'olde';
+  transform-origin: center bottom;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.stretch h1 {
+  font-size: 27vw;
+  text-align: center;
+  line-height: 0.8;
+}
+
+.stretch h1:nth-child(2) {
+  font-size: 28vw;
+}
+
+.stretch h1:nth-child(3) {
+  font-size: 24vw;
+}
+
+.stretch h1:nth-child(4) {
+  font-size: 18.5vw;
+  line-height: 1;
 }
