@@ -12,7 +12,7 @@
 <section id="d8s" class="mt-36 rap w-full p-8 text-sh80-blue z-10 min-h-screen flex items-center justify-center my-60">
 @include('sections.d8s')
 </section>
-<section id="c0nt3nt" class="md:grid md:grid-cols-3 md:gap-3 p-2 my-80">
+<section id="c0nt3nt" class="p-2 my-80">
 @include('sections.cont3nt')
 </section>
 <section id="footer">

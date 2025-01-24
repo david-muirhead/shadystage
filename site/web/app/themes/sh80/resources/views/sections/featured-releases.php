@@ -1,4 +1,6 @@
-<div class="mt-36 rap w-full p-8 text-sh80-offwhite z-10 flex">
+<div class="relative">
+  <h2 class="relative top-5 text-h1-m rotate-25 drop-shadow-sm w-full text-center mt-36">Releases</h2>
+  <div class="md:grid md:grid-cols-3 md:gap-3">
   <?php
     $loop = new WP_Query( array( 'post_type' => 'releases','meta_query' => array(
   array(
@@ -9,7 +11,7 @@
 ) ) );
     if ( $loop->have_posts() ) :
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <div class="feature release group pb-5 md:pb-10 block">
+          <div class="feature release group pb-8 md:pb-12 block w-full">
             
               <div >
               <?php
@@ -21,8 +23,8 @@
             </div>
             <div class="info inline-block  cursor-pointer">
               <span class="text-h2"><?php the_field('title'); ?></span>
-              <span class="text-h3"><?php the_field('format'); ?></span>
-              <span class="text-h2"><?php the_field('year'); ?></span>
+              <span class="text-h3"> - <?php the_field('format'); ?></span>
+              <span class="text-h2 block"><?php the_field('year'); ?></span>
               <?php if( have_rows('links') ): ?>
                 <div class="linx">
                   <?php while( have_rows('links') ): the_row();
@@ -115,4 +117,5 @@
     endif;
     wp_reset_postdata();
 ?>
+</div>
 </div>

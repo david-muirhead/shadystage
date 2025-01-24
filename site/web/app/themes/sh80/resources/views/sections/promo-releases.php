@@ -12,7 +12,7 @@
     ) );
     if ( $loop->have_posts() ) :
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-         <span class="relative top-5 text-h1-m -rotate-25 drop-shadow-sm"><?php the_field('title'); ?></span>
+         <span class="relative top-5 text-h1-m rotate-25 drop-shadow-sm"><?php the_field('title'); ?></span>
           <div class="feature release group pb-10 w-full max-w-4xl px-4 flex flex-col items-center">
             <div class="covers group w-full">
             <?php if( get_field('song') ): ?>
