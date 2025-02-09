@@ -44,7 +44,7 @@ foreach ( $member_group_terms as $member_group_term ) {
 
     <?php
     if ( $member_group_query->have_posts() ) : while ( $member_group_query->have_posts() ) : $member_group_query->the_post(); ?>
-    <a class="text-sh80-green md:inline-block mr-8 mb-8" href="<?php the_field('link'); ?>" target="_blank">
+    <a class="text-sh80-cula md:inline-block mr-8 mb-8" href="<?php the_field('link'); ?>" target="_blank">
       <p class="text-h3"><?php the_field('date'); ?></p>
       <p class="text-h1 inline-block"><?php the_field('city'); ?></p>
       <p class="text-h2 left"><?php the_field('venue_name'); ?></p>
