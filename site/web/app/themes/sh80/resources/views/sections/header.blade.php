@@ -25,7 +25,7 @@
   </div>
 
     <span class="l1nk w-screen absolute -top-1/2 pt-hero z-20"href="{{ home_url('/') }}">
-    @svg('images.sh80L060', 'px-20  drop-shadow-lg', ['aria-label' => 'Sick Logo'])  </span>
+    @svg('images.sh80L060', 'px-20  drop-shadow-lg sh80-logo', ['aria-label' => 'Sick Logo'])  </span>
     <div class="md:bg-gradient-to-b from-black  absolute w-full  z-0 -bottom-80 h-80"></div>
   </header>
 
