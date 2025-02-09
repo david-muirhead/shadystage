@@ -1,11 +1,11 @@
   <header class="banner h-screen z-10 bg-sh80-cula">
-    <div id="top" class="fixed grid grid-cols-4 gap-4 w-full text-sm text-sh80-green font-mono z-50">
+    <div id="top" class="fixed grid grid-cols-4 gap-4 w-full text-sm text-sh80-cula font-mono z-50">
     <a href="#bigRed">releases</a>
     <a href="#d8s">dates</a>
     <a href="#c0nt3nt">vision</a>
-    <a class="margin border-b-sh80-green" href="#shop">shop</a>
+    <a class="margin border-b-sh80-cula" href="#shop">shop</a>
   </div>
-  <span id="h0va" class="l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-green">this is shadynasty</br> tranmitting from SYD/EORA</span>
+  <span id="h0va" class="l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> tranmitting from SYD/EORA</span>
   <div id="h3r05h17"class="h-screen w-full absolute top-0 flex items-center justify-center overflow-hidden z-0">
       <video  id="" class="w-full -z-10" loop autoplay muted>
       <source src="<?php the_field('hero_space_two_video', 'option');?>" type="video/mp4">

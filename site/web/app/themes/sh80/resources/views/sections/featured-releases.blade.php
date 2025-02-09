@@ -1,1 +1,1 @@
-<div class="bg-sh80-cula"> 
+<div class="bg-sh80-cula">
