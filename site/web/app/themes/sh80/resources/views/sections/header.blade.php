@@ -1,4 +1,4 @@
-  <header class="banner h-screen z-10">
+  <header class="banner h-screen z-10 bg-sh80-cula">
     <div id="top" class="fixed grid grid-cols-4 gap-4 w-full text-sm text-sh80-green font-mono z-50">
     <a href="#bigRed">releases</a>
     <a href="#d8s">dates</a>

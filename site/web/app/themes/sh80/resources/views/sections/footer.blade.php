@@ -1,4 +1,4 @@
-<footer class="content-info py-30 bg-sh80-green block border-4 border-double border-black">
+<footer class="content-info py-30 bg-sh80-cula block border-4 border-double border-black">
   {{-- Header Text --}}
   <div class="stretch pt-20" data-scroll>
     <h1>SHADY</h1>
