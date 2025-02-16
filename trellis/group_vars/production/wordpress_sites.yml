@@ -9,7 +9,7 @@ wordpress_sites:
       - www.shadynasty.online
     local_path: ../site
     branch: main
-    repo: git@github.com:example/example.com.git
+    repo: git@github.com:david-muirhead/shadystage.git
     repo_subtree_path: site
     multisite:
       enabled: false
