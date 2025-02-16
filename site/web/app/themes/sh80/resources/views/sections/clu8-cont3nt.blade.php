@@ -13,7 +13,7 @@
             ],
             [
                 'key' => 'project',
-                'value' => 'clubsmoke',
+                'value' => 'Clubsmoke',
                 'compare' => '=='
             ]
         ]
@@ -93,7 +93,7 @@
             ],
             [
                 'key' => 'project',
-                'value' => 'clubsmoke',
+                'value' => 'Clubsmoke',
                 'compare' => 'LIKE'
             ]
         ]
