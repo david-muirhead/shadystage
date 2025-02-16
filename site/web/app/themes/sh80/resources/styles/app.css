@@ -12,6 +12,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'helvetica-stretch';
+  src: url('../fonts/helv-exp.woff2') format('woff2'),
+       url('../fonts/helv-exp.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: 1% 500%;
+}
+
 :root {
 	font-size: 14px;
 	--color-text: #000;
@@ -25,7 +35,7 @@
 
 html {
   @apply bg-stone-900 tracking-tighter scroll-smooth;
-  font-family:Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family:'helvetica-stretch', Arial, "Lucida Grande", sans-serif; 
   font-weight: 700;
   text-transform: uppercase;
   --color-text: #234acd;
@@ -34,6 +44,10 @@ html {
 	--color-link-hover: #fff;
 	--cursor-bg: #ff4700;
 	--cursor-blend-mode: overlay;
+}
+
+.wide {
+  font-stretch: 200%;
 }
 
 section{

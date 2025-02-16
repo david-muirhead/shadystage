@@ -11,7 +11,7 @@
 @include('sections.d8s')
 </section>
 <section id="c0nt3nt" class="p-2 my-80 text-sh80-cula">
-<h2 class="relative top-5 text-h1-m rotate-25 drop-shadow-sm w-full text-center mt-36 underline">Releases</h2>
+<h2 class="relative top-5 text-h1-m rotate-25 drop-shadow-sm w-full text-center mt-36 underline wide">Releases</h2>
 @include('sections.tr3k-cont3nt')
 @include('sections.clu8-cont3nt')
 @include('sections.b4d-cont3nt')
