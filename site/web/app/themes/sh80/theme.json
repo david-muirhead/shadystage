@@ -1248,14 +1248,24 @@
           "color": "#4c0519"
         },
         {
+          "name": "Sh80-green",
+          "slug": "sh80-green",
+          "color": "#00ff00"
+        },
+        {
+          "name": "Sh80-cula",
+          "slug": "sh80-cula",
+          "color": "#00d2ff"
+        },
+        {
+          "name": "Sh80-offwhite",
+          "slug": "sh80-offwhite",
+          "color": "#f5f5f5"
+        },
+        {
           "name": "Primary",
           "slug": "primary",
           "color": "#1475be"
-        },
-        {
-          "name": "Sh80 Green",
-          "slug": "sh80-green",
-          "color": "#00d2ff"
         },
         {
           "name": "Sh80 Orange",
@@ -1271,11 +1281,6 @@
           "name": "Sh80 Blue",
           "slug": "sh80-blue",
           "color": "#00d2ff"
-        },
-        {
-          "name": "Sh80 Offwhite",
-          "slug": "sh80-offwhite",
-          "color": "#f7ebd5"
         }
       ]
     },

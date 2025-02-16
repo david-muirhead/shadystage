@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'woocommerce.css';
 
 @font-face {
   font-family: 'olde';
@@ -23,9 +24,9 @@
 }
 
 html {
-  @apply bg-stone-900 tracking-wide scroll-smooth;
-  font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 600;
+  @apply bg-stone-900 tracking-tighter scroll-smooth;
+  font-family:Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 700;
   text-transform: uppercase;
   --color-text: #234acd;
 	--color-bg: #000;
@@ -33,12 +34,10 @@ html {
 	--color-link-hover: #fff;
 	--cursor-bg: #ff4700;
 	--cursor-blend-mode: overlay;
-  scroll-snap-type: y mandatory;
 }
 
 section{
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
+
 }
 
 

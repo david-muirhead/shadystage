@@ -1,12 +1,9 @@
 <div class="mt-36 w-full p-8 z-10 flex flex-col items-center">
   <?php
     $loop = new WP_Query( array( 
-      'post_type' => 'releases',
+      'post_type' => 'post',
       'meta_query' => array(
         array(
-          'key' => 'promo',
-          'value' => '1',
-          'compare' => '=='
         )
       ) 
     ) );

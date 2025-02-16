@@ -40,7 +40,7 @@
   },
   "require": {
     "php": "^8.0",
-    "generoi/sage-woocommerce": "^1.0",
+    "generoi/sage-woocommerce": "^1.1",
     "johnbillion/extended-cpts": "^5.0",
     "log1x/acf-composer": "^2.1",
     "log1x/poet": "^2.0",

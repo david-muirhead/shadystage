@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} config */
 const config = {
-  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
+  content: [
+    './index.php', './app/**/*.php', './resources/**/*.{php,vue,js}',
+    './resources/styles/woocommerce.css'
+  ],
   theme: {
     extend: {
       spacing: {
@@ -11,13 +14,14 @@ const config = {
         'slidebig': '40rem',
       },
       colors: {
+        'sh80-green': '#00FF00', // Preserved but not in use
+        'sh80-cula': '#00d2ff',  // New primary color
+        'sh80-offwhite': '#F5F5F5',
         primary: "#1475be",
         sh80: {
-          green: '#00D2FF',
           orange: '#FF4200',
           purple: '#4000a9',
           blue: '#00D2FF',
-          offwhite: '#f7ebd5',
         },
       }, // Extend Tailwind's default colors
       fontSize: {
