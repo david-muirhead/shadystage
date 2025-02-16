@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<div class="mt-36 w-full p-8 z-10 flex flex-col items-center">
+<div class="mt-20 w-full p-8 z-10 flex flex-col items-center">
     @php
     $featured_releases = new WP_Query([
         'post_type' => 'releases',
