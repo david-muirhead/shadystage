@@ -1,4 +1,4 @@
-  <div>
+  <div class="w-full">
 <?php
 $member_group_terms = get_terms( 'tour' );
 ?>
