@@ -13,7 +13,7 @@
             ],
             [
                 'key' => 'project',
-                'value' => 'Clubsmoke',
+                'value' => 'clubsmoke',
                 'compare' => '=='
             ]
         ]
@@ -93,7 +93,7 @@
             ],
             [
                 'key' => 'project',
-                'value' => 'Clubsmoke',
+                'value' => 'clubsmoke',
                 'compare' => 'LIKE'
             ]
         ]
@@ -130,4 +130,3 @@
         @php wp_reset_postdata() @endphp
     @endif
 </div>
-
