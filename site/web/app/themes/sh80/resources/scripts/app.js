@@ -42,27 +42,18 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
 });
 
 var vert = document.querySelector(".vert");
+var trans = document.querySelector(".transmit");
 
 var scrollTop = window.pageYOffset;
 document.querySelectorAll('#bigRed').forEach(function(element) {
   var topDistance = element.offsetTop;
   if ((topDistance + 600) < scrollTop) {
+    trans.style.opacity = 0;
     vert.style.opacity = 1;
   } else {
+    trans.style.opacity = 1;
     vert.style.opacity = 0;
   }
-});
-
-window.addEventListener('scroll', function() {
-  var scrollTop = window.pageYOffset;
-  document.querySelectorAll('#bigRed').forEach(function(element) {
-      var topDistance = element.offsetTop;
-      if ((topDistance + 600) < scrollTop) {
-        vert.style.opacity = 1;
-      } else {
-        vert.style.opacity = 0;
-      }
-  });
 });
   // this is the end
 

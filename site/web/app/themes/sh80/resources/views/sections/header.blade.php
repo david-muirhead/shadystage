@@ -16,7 +16,7 @@
     <a href="#c0nt3nt">Releases</a>
     <a class="margin border-b-sh80-cula" href="#shop">shop</a>
   </div>
-  <span id="h0va" class="l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> tranmitting from SYD/EORA</span>
+  <span id="h0va" class="transmit l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> tranmitting from SYD/EORA</span>
   @if($hero_two_video = get_field('hero_space_two_video', 'option'))
     <div id="h3r05h17"class="h-screen w-full absolute top-0 flex items-center justify-center overflow-hidden z-0">
       <video  id="" class="w-full -z-10" loop autoplay muted>
