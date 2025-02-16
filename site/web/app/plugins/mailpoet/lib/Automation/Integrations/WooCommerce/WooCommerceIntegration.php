@@ -1,0 +1,63 @@
+<?php declare(strict_types = 1);
+
+namespace MailPoet\Automation\Integrations\WooCommerce;
+
+if (!defined('ABSPATH')) exit;
+
+
+use MailPoet\Automation\Engine\Registry;
+use MailPoet\Automation\Integrations\WooCommerce\Subjects\AbandonedCartSubject;
+use MailPoet\Automation\Integrations\WooCommerce\Subjects\CustomerSubject;
+use MailPoet\Automation\Integrations\WooCommerce\Subjects\OrderStatusChangeSubject;
+use MailPoet\Automation\Integrations\WooCommerce\Subjects\OrderSubject;
+use MailPoet\Automation\Integrations\WooCommerce\Triggers\OrderStatusChangedTrigger;
+
+class WooCommerceIntegration {
+
+  /** @var OrderStatusChangedTrigger */
+  private $orderStatusChangedTrigger;
+
+  /** @var AbandonedCartSubject */
+  private $abandonedCartSubject;
+
+  /** @var OrderStatusChangeSubject */
+  private $orderStatusChangeSubject;
+
+  /** @var OrderSubject */
+  private $orderSubject;
+
+  /** @var CustomerSubject */
+  private $customerSubject;
+
+  /** @var ContextFactory */
+  private $contextFactory;
+
+  public function __construct(
+    OrderStatusChangedTrigger $orderStatusChangedTrigger,
+    AbandonedCartSubject $abandonedCartSubject,
+    OrderStatusChangeSubject $orderStatusChangeSubject,
+    OrderSubject $orderSubject,
+    CustomerSubject $customerSubject,
+    ContextFactory $contextFactory
+  ) {
+    $this->orderStatusChangedTrigger = $orderStatusChangedTrigger;
+    $this->abandonedCartSubject = $abandonedCartSubject;
+    $this->orderStatusChangeSubject = $orderStatusChangeSubject;
+    $this->orderSubject = $orderSubject;
+    $this->customerSubject = $customerSubject;
+    $this->contextFactory = $contextFactory;
+  }
+
+  public function register(Registry $registry): void {
+
+    $registry->addContextFactory('woocommerce', function () {
+      return $this->contextFactory->getContextData();
+    });
+
+    $registry->addSubject($this->abandonedCartSubject);
+    $registry->addSubject($this->orderSubject);
+    $registry->addSubject($this->orderStatusChangeSubject);
+    $registry->addSubject($this->customerSubject);
+    $registry->addTrigger($this->orderStatusChangedTrigger);
+  }
+}
