@@ -26,7 +26,7 @@
       </video> 
     </div>
   @endif
-  @if($hero_two_image = get_field('hero_space_two_image', 'option'))
+  @if($hero_two_image = get_field('hero_space_image', 'option'))
     <div id="h3r05h17"class="h-screen w-full absolute top-0 flex items-center justify-center z-10">
       <img class="w-1/2 "src="{{ $hero_two_image }}" alt="Your Image">
     </div>
