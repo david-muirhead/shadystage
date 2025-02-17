@@ -11,11 +11,11 @@
   }
   </style>
     <div id="top" class=" pt-2 drop-shadow fixed grid grid-cols-5 gap-4 w-full text-sm text-sh80-cula text-center font-mono z-50">
-    <a href="#bigRed">News</a>
-    <a href="#d8s">dates</a>
-    <a href="#c0nt3nt">Releases</a>
-    <a class="margin border-b-sh80-cula" href="#sh0p">Shop</a>
-    <a class="margin border-b-sh80-cula" href="#fo0t">Contact</a>
+    <a class="underline" href="#bigRed">News</a>
+    <a class="underline" href="#d8s">dates</a>
+    <a class="underline" href="#c0nt3nt">Releases</a>
+    <a class="line-through pointer-events-none" href="#sh0p">Shop</a>
+    <a class="underline" href="#fo0t">Contact</a>
   </div>
   <span id="h0va" class="transmit l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> transmitting from SYD/EORA</span>
   @if($hero_two_video = get_field('hero_space_two_video', 'option'))

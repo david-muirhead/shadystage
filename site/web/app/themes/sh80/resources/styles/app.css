@@ -46,6 +46,10 @@ html {
 	--cursor-blend-mode: overlay;
 }
 
+body.logged-in #sh0p {
+  display: none !important; 
+}
+
 .wide {
   font-stretch: 200%;
 }
