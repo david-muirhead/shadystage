@@ -179,15 +179,3 @@ filter:  blur(10px) saturate(25%);
   line-height: 0.8;
 }
 
-.stretch h1:nth-child(2) {
-  font-size: 28vw;
-}
-
-.stretch h1:nth-child(3) {
-  font-size: 24vw;
-}
-
-.stretch h1:nth-child(4) {
-  font-size: 18.5vw;
-  line-height: 1;
-}

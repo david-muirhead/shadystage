@@ -1,8 +1,12 @@
 <footer class="content-info py-30 bg-sh80-cula block border-4 border-double border-black">
   {{-- Header Text --}}
   <div class="stretch pt-20" data-scroll>
-    <h1>SHADY</h1>
-    <h1>NASTY</h1>
+    <?php while(have_rows('footer_text', 'options')): the_row(); ?>
+
+      <h1> <?php the_sub_field('text-foot'); ?></h1>
+            
+    <?php endwhile; ?>
+    
   </div>
 
   {{-- Navigation Link --}}
@@ -120,7 +124,7 @@
 
 
   {{-- Footer Content --}}
-  <div class="footer-container text-h3">
+  <div id="fo0t" class="footer-container text-h3">
     <div class="footer-grid p-10 relative">
       <h4 class="text-h1-m">Contact Info</h4>
       <section class="relative">

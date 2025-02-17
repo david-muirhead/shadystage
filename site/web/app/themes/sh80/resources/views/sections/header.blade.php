@@ -15,7 +15,7 @@
     <a href="#d8s">dates</a>
     <a href="#c0nt3nt">Releases</a>
     <a class="margin border-b-sh80-cula" href="#sh0p">Shop</a>
-    <a class="margin border-b-sh80-cula" href="#footer">Contact</a>
+    <a class="margin border-b-sh80-cula" href="#fo0t">Contact</a>
   </div>
   <span id="h0va" class="transmit l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> transmitting from SYD/EORA</span>
   @if($hero_two_video = get_field('hero_space_two_video', 'option'))
