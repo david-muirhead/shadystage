@@ -168,11 +168,15 @@ canvas {
 
 #icon {
 filter:  blur(10px) saturate(25%);
+mix-blend-mode: multiply;
 }
 #icon2 {
-  filter: contrast(150%) grayscale(100%) brightness(50000%) blur(10px) saturate(600%);
+  mix-blend-mode: overlay;
   filter: contrast(200%) grayscale(0%) brightness(50000%) blur(2px) saturate(200%);
 }
+#icon3 {
+  filter: contrast(150%) grayscale(100%) brightness(50000%) blur(10px) saturate(600%);}
+
 
 .stretch {
   font-family: 'olde';
