@@ -6,7 +6,7 @@
   </div>
 
   {{-- Navigation Link --}}
-  <span class="vert">
+  <span class="vert text-sh80-cula">
     <a href="#app">SHADY NASTY</a>
   </span>
 
@@ -122,10 +122,8 @@
   {{-- Footer Content --}}
   <div class="footer-container text-h3">
     <div class="footer-grid p-10 relative">
-    <img class=" absolute right-0 w-1/3 bottom-20 mix-blend-darken" src="<?php the_field('xtra_image', 'option');?>" alt="Your Image">
-
       <h4 class="text-h1-m">Contact Info</h4>
-      <section>
+      <section class="relative">
         {{-- Booking Contacts --}}
         <?php while(have_rows('emails_booking', 'options')): the_row(); ?>
           <span class="pt-10 block">
@@ -158,18 +156,17 @@
       </section>
 
       {{-- Social Media Links --}}
-      <div class="social grid grid-cols-2 md:grid-cols-7 md:gap-3 pb-10">
+      <div class="relative social grid grid-cols-2 md:grid-cols-7 md:gap-3 pb-10 z-10">
         <?php while(have_rows('social_links', 'options')): the_row(); ?>
           <span class="pt-5 text-center">
-            <a href="<?php the_sub_field('social_url'); ?>">
+            <a target="_blank" href="<?php the_sub_field('social_url'); ?>">
               <?php the_sub_field('label_for_social'); ?>
             </a>
           </span>
         <?php endwhile; ?>
       </div>
-  
+      <img class=" absolute right-0 w-1/3 bottom-20 mix-blend-darken z-0" src="<?php the_field('xtra_image', 'option');?>" alt="Your Image">
       </section>
-
       </div>
     </div>
   </div>

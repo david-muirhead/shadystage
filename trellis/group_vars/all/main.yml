@@ -10,6 +10,9 @@ www_root: /srv/www
 max_journal_size: 512M
 nginx_keyserver: 'hkp://keyserver.ubuntu.com:80'
 nginx_keyserver_id: "ABF5BD827BD9BF62"
+letsencrypt_contact_emails:
+  - dkjmuirhead@gmail.com
+  - "{{ mail_admin }}" 
 
 # Values of raw_vars will be wrapped in `{% raw %}` to avoid templating problems if values include `{%` and `{{`.
 # Will recurse dicts/lists. `*` is wildcard for one or more dict keys, list indices, or strings. Example:
