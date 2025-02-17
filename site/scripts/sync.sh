@@ -7,8 +7,8 @@
 DEVDIR="web/app/uploads/"
 DEVSITE="http://shadynasty.test"
 
-PRODDIR="web@hi-ground.org:/srv/www/example/shared/uploads/"
-PRODSITE="https://hi-ground.org"
+PRODDIR="web@shadynasty.online:/srv/www/shadynasty.online/current/web/app/uploads"
+PRODSITE="http://shadynasty.online"
 
 STAGDIR="web@stage.shadynasty.online:/srv/www/shadynasty.online/current/web/app/uploads"
 STAGSITE="http://stage.shadynasty.online"

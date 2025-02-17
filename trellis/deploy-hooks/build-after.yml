@@ -5,7 +5,7 @@
 # Uncomment the lines below if you are using Sage 10
 #
 
-- name: Run Acorn optimize
-  command: wp acorn optimize
-  args:
-    chdir: "{{ deploy_helper.new_release_path }}"
+# - name: Run Acorn optimize
+#   command: wp @production acorn optimize
+#   args:
+#     chdir: "{{ deploy_helper.new_release_path }}"
