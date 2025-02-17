@@ -58,6 +58,12 @@
     "roave/security-advisories": "dev-latest"
   },
   "config": {
+    "http-basic": {
+      "connect.advancedcustomfields.com": {
+        "username": "dkjmuirhead@gmail.com",
+        "password": "b3JkZXJfaWQ9MTU2NjMyfHR5cGU9ZGV2ZWxvcGVyfGRhdGU9MjAxOS0wMy0yOCAxMzoyNzoxOA=="
+      }
+    },
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "allow-plugins": {
