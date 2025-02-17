@@ -1,5 +1,5 @@
 ---
-nginx_keyserver: 'hkp://keyserver.ubuntu.com:80'
+nginx_keyserver: "https://nginx.org/keys/nginx_signing.key"
 nginx_keyserver_id: "ABF5BD827BD9BF62"
 nginx_ppa: "deb http://nginx.org/packages/mainline/ubuntu {{ ansible_distribution_release }} nginx"
 nginx_package: nginx
