@@ -46,8 +46,12 @@ html {
 	--cursor-blend-mode: overlay;
 }
 
+#sh0p {
+  display: none; 
+}
+
 body.logged-in #sh0p {
-  display: none !important; 
+  display: block !important; 
 }
 
 .wide {
