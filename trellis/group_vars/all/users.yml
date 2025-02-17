@@ -7,14 +7,12 @@ users:
     groups:
       - "{{ web_group }}"
     keys:
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       - "{{ lookup('file', '~/.ssh/id_ed25519.pub') }}"
       - https://github.com/david-muirhead.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       - "{{ lookup('file', '~/.ssh/id_ed25519.pub') }}"
       - https://github.com/david-muirhead.keys
 
