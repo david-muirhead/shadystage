@@ -7,10 +7,10 @@
 DEVDIR="web/app/uploads/"
 DEVSITE="http://shadynasty.test"
 
-PRODDIR="web@shadynasty.online:/srv/www/shadynasty.online/current/web/app/uploads"
+PRODDIR="web@shadynasty.online:/srv/www/shadynasty.online/current/web/app/uploads/"
 PRODSITE="https://shadynasty.online"
 
-STAGDIR="web@stage.shadynasty.online:/srv/www/shadynasty.online/current/web/app/uploads"
+STAGDIR="web@stage.shadynasty.online:/srv/www/shadynasty.online/current/web/app/uploads/"
 STAGSITE="http://stage.shadynasty.online"
 
 FROM=$1
