@@ -34,7 +34,7 @@
   @endif
   @if($hero_video = get_field('hero_space_video', 'option'))
     <div id="h3r05h17"class="h-screen w-full absolute top-0 flex items-center justify-center z-0 overflow-hidden mix-blend-lighten">
-      <video  id="icon3" class="w-screen -z-10"  loop autoplay muted>
+      <video  class="w-screen -z-10"  loop autoplay muted>
       <source src="{{ $hero_video }}" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
@@ -42,7 +42,7 @@
     </div>
   @endif
 
-    <span class="l1nk w-screen absolute -top-1/2 pt-hero z-20"href="{{ home_url('/') }}">
+    <span class="l1nk w-screen h-screen flex justify-center items-center z-20"href="{{ home_url('/') }}">
     @svg('images.sh80L060', 'px-20  drop-shadow-lg sh80-logo', ['aria-label' => 'Sick Logo'])  </span>
     <div class="md:bg-gradient-to-b from-black  absolute w-full  z-0 -bottom-80 h-80"></div>
   </header>
