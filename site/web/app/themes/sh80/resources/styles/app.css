@@ -44,6 +44,10 @@ html {
 	--color-link-hover: #fff;
 	--cursor-bg: #ff4700;
 	--cursor-blend-mode: overlay;
+  cursor: url('/images/DragonScimi.cur'), auto;
+}
+a {
+  cursor: url('/images/DragonScimiHand.cur'), auto;
 }
 
 #sh0p {
