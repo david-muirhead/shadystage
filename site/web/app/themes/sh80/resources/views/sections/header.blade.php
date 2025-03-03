@@ -6,6 +6,9 @@
   .text-sh80-cula {
       color: <?php the_field('site_colour', 'option'); ?>;
   }
+  .border-sh80-cula {
+    border-color: <?php the_field('site_colour', 'option'); ?>;
+  }
   .sh80-logo{
       fill:<?php the_field('site_colour', 'option'); ?>;
   }
@@ -19,7 +22,7 @@
   </div>
   <span id="h0va" class="transmit l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> transmitting from SYD/EORA</span>
   @if($hero_two_video = get_field('hero_space_two_video', 'option'))
-    <div id="h3r05h17 icon3"class="h-screen w-full absolute top-0 flex items-center justify-center overflow-hidden z-0 ">
+    <div id="h3r05h17 icon3"class="h-screen w-full  hidden md:flex absolute top-0 items-center justify-center overflow-hidden z-0 ">
       <video class="w-full -z-10" loop autoplay muted>
       <source src="{{ $hero_two_video }}" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
@@ -27,13 +30,18 @@
       </video> 
     </div>
   @endif
-  @if($hero_two_image = get_field('hero_space_image', 'option'))
-    <div id="h3r05h17"class="h-screen w-full absolute top-0 flex items-center justify-center z-10">
+  @if($hero_two_image = get_field('hero_two_image', 'option'))
+    <div id="h3r05h17"class=" h-screen w-full absolute top-0 hidden md:flex items-center justify-center z-10">
       <img class="w-1/2 "src="{{ $hero_two_image }}" alt="Your Image">
     </div>
   @endif
+  @if($hero_space_image = get_field('hero_space_image', 'option'))
+    <div id="h3r05h17"class=" h-screen absolute top-0 md:hidden items-center justify-center z-10">
+      <img class="w-full h-full object-cover"src="{{ $hero_space_image }}" alt="shady nasty on top">
+    </div>
+  @endif
   @if($hero_video = get_field('hero_space_video', 'option'))
-    <div id="h3r05h17"class="h-screen w-full absolute top-0 flex items-center justify-center z-0 overflow-hidden mix-blend-lighten">
+    <div id="h3r05h17"class="h-screen w-full hidden md:flex absolute  top-0  items-center justify-center z-0 overflow-hidden mix-blend-lighten">
       <video  class="w-screen -z-10"  loop autoplay muted>
       <source src="{{ $hero_video }}" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">

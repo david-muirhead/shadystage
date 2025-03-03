@@ -48,7 +48,11 @@
       background-color: transparent;
       border: 2px solid black;
       padding: 0.5rem;
-      width: 100%;
+    }
+    #mc-embedded-subscribe {
+      background-color: transparent;
+      border: 2px solid black !important;
+      padding: 0.5rem;
     }
     #mc_embed_signup .button {
       background-color: black !important;
@@ -114,7 +118,7 @@
     </div>
         <div class="optionalParent">
             <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe"  value="Subscribe">
+                <input class="p-4 border"type="submit" name="subscribe" id="mc-embedded-subscribe"  value="Subscribe">
             </div>
         </div>
     </div>
@@ -169,7 +173,7 @@
           </span>
         <?php endwhile; ?>
       </div>
-      <img class=" absolute right-0 w-1/3 bottom-20 mix-blend-darken z-0" src="<?php the_field('xtra_image', 'option');?>" alt="Your Image">
+      <img class="hidden md:flex absolute right-0 w-1/3 bottom-20 mix-blend-darken z-0" src="<?php the_field('xtra_image', 'option');?>" alt="Your Image">
       </section>
       </div>
     </div>
