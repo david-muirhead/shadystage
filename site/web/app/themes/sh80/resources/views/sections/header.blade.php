@@ -23,7 +23,7 @@
   <span id="h0va" class="transmit l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> transmitting from SYD/EORA</span>
   @if($hero_two_video = get_field('hero_space_two_video', 'option'))
     <div id="h3r05h17 icon3"class="h-screen w-full  hidden md:flex absolute top-0 items-center justify-center overflow-hidden z-0 ">
-      <video class="w-full -z-10" loop autoplay muted>
+      <video class="w-full -z-10 object-cover" loop autoplay muted>
       <source src="{{ $hero_two_video }}" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
@@ -42,7 +42,7 @@
   @endif
   @if($hero_video = get_field('hero_space_video', 'option'))
     <div id="h3r05h17"class="h-screen w-full hidden md:flex absolute  top-0  items-center justify-center z-0 overflow-hidden mix-blend-lighten">
-      <video  class="w-screen -z-10"  loop autoplay muted>
+      <video  class="w-screen -z-10 object-cover"  loop autoplay muted>
       <source src="{{ $hero_video }}" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
