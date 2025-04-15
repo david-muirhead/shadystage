@@ -80,7 +80,7 @@
     @endif
 </div>
 
-<div class="md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-3">
+<div class="md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-1">
     @php
     $video_releases = new WP_Query([
         'post_type' => 'releases',

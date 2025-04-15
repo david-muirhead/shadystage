@@ -22,9 +22,9 @@
   <div class="lightbox-overlay z-10"></div>
 </div>
 </section>
-<section id="sh0p" class="p-2 my-80">
+<!-- <section id="sh0p" class="p-2 my-80">
 @include('sections.shop')
-</section>
+</section> -->
 <section id="footer">
 @include('sections.footer')
 </section>

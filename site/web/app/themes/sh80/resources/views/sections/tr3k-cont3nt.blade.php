@@ -80,7 +80,7 @@
     @endif
 </div>
 
-<div class="md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-3">
+<div class="md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-1">
     @php
     $video_releases = new WP_Query([
         'post_type' => 'releases',
@@ -104,7 +104,7 @@
         @while($video_releases->have_posts())
             @php $video_releases->the_post() @endphp
             
-            <div class="release relative block aspect-video text-stone-900 m-4">
+            <div class="release relative block aspect-video text-stone-900 m-2">
                 <div class="absolute info font-mono text-sm text-stone-900 top-0 z-10 text-h2">
                     @hasfield('title')
                         <span class="inline-block rounded-lg px-2 ml-2 bg-sh80-offwhite mt-2">@field('title')</span>

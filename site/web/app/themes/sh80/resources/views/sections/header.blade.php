@@ -17,7 +17,7 @@
     <a class="underline" href="#bigRed">News</a>
     <a class="underline" href="#d8s">dates</a>
     <a class="underline" href="#c0nt3nt">Releases</a>
-    <a class="line-through pointer-events-none" href="#sh0p">Shop</a>
+    <a class="" href="https://shadynastysyd.bigcartel.com/">Shop</a>
     <a class="underline" href="#fo0t">Contact</a>
   </div>
   <span id="h0va" class="transmit l1nk font-mono z-10 text-sm fixed top-0 p-20 font-mono text-sh80-cula">this is shadynasty</br> transmitting from SYD/EORA</span>
