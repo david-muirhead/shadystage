@@ -136,7 +136,7 @@
         <span class="pt-10 block">
         <h5>Booking</h5>
         <?php while(have_rows('emails_booking', 'options')): the_row(); ?>
-            <a class="w-1/2 underline" href="mailto:<?php the_sub_field('email_addy'); ?>" target="_blank">
+            <a class="w-1/2 underline block" href="mailto:<?php the_sub_field('email_addy'); ?>" target="_blank">
               <?php the_sub_field('name'); ?>
             </a>
             <?php endwhile; ?>
@@ -147,7 +147,7 @@
         <span class="pt-10 block">
         <h5>Band</h5>
         <?php while(have_rows('emails_band', 'options')): the_row(); ?>
-            <a class="underline" href="mailto:<?php the_sub_field('email_adress'); ?>">
+            <a class="underline block" href="mailto:<?php the_sub_field('email_adress'); ?>">
               <?php the_sub_field('name'); ?>
             </a>
             <?php endwhile; ?>
