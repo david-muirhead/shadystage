@@ -52,7 +52,7 @@
     #mc-embedded-subscribe {
       background-color: transparent;
       border: 2px solid black !important;
-      padding: 0.5rem;
+      padding: 0.5rem; object-cover
     }
     #mc_embed_signup .button {
       background-color: black !important;
@@ -133,24 +133,25 @@
       <h4 class="text-h1-m">Contact Info</h4>
       <section class="relative">
         {{-- Booking Contacts --}}
+        <span class="pt-10 block">
+        <h5>Booking</h5>
         <?php while(have_rows('emails_booking', 'options')): the_row(); ?>
-          <span class="pt-10 block">
-            <h5>Booking</h5>
             <a class="w-1/2 underline" href="mailto:<?php the_sub_field('email_addy'); ?>" target="_blank">
               <?php the_sub_field('name'); ?>
             </a>
+            <?php endwhile; ?>
           </span>
-        <?php endwhile; ?>
+
 
         {{-- Band Contacts --}}
+        <span class="pt-10 block">
+        <h5>Band</h5>
         <?php while(have_rows('emails_band', 'options')): the_row(); ?>
-          <span class="pt-10 block">
-            <h5>Band</h5>
             <a class="underline" href="mailto:<?php the_sub_field('email_adress'); ?>">
               <?php the_sub_field('name'); ?>
             </a>
+            <?php endwhile; ?>
           </span>
-        <?php endwhile; ?>
 
         {{-- Band Contacts --}}
         <span class="py-10 block">
