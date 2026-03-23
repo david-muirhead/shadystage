@@ -69,7 +69,7 @@ There are a number of development tools available as npm scripts. Check the [`pa
 
 -   `npm run lint:js`: Run [`eslint`](https://eslint.org/) to validate JavaScript code style.
 -   `npm run lint:css`: Run [`stylelint`](https://stylelint.io/) to validate CSS code style.
--   `npm run lint:php`: Run [`phpcs`](https://github.com/squizlabs/PHP_CodeSniffer) to validate PHP code style.
+-   `npm run lint:php`: Run [`phpcs`](https://github.com/PHPCSStandards/PHP_CodeSniffer) to validate PHP code style.
 
 Please use these tools to ensure your code changes are consistent with the rest of the code base. This code follows WooCommerce and WordPress standards.
 
