@@ -1,4 +1,4 @@
-<section class="shop-section container mx-auto px-4 py-8">
+<!-- <section class="shop-section container mx-auto px-4 py-8">
   <h2 class="text-4xl mb-8">Shop</h2>
   
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -50,4 +50,4 @@
     endif;
     ?>
   </div>
-</section>
+</section> -->
